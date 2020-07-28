@@ -1,0 +1,1 @@
+https://github.com/rugged-board/meta-rba5d2x/tree/sumo-rba5d2x/recipes-devtools/mraa/mraa
