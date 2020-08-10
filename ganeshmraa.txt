@@ -1,0 +1,28 @@
+https://github.com/rugged-board/meta-rba5d2x/tree/sumo-rba5d2x/recipes-devtools/mraa/mraa
+
+link tool chain of a5d2
+
+git clone https://github.com/eclipse/mraa.git
+
+git checkout v2.0.0
+
+git checkout -b v2.0.0
+
+git am 0001-added-support-for-AM5D27-Rugged-board.patch
+
+git am 0001-FindNodejs.cmake-parse-V8_MAJOR_VERSION-from-nodejs-.patch
+
+git am 0002-pwm_support_sama5d2.patch
+
+git am 0001-added-support-for-adc-in-mikrobus.patch
+
+mkdir build
+
+cd build
+
+cmake ..
+
+make
+
+aio=6
+
